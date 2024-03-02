@@ -1,0 +1,25 @@
+#include<time.h>
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{time_t a;int z;
+srand((unsigned)time(&a));
+int m=rand()%99;
+int p=1;
+for(int i=1;i<=5;i++)
+{
+printf("\nENTER YOUR %d CHOICE:",p++);
+scanf("%d",&z);
+if(z==m){
+printf("\nRIGHT ANSWER");break;}
+else if(z<m)
+printf("\nYou entered a small value");
+else if(z>m)
+printf("\nYou entered a high value");
+if(i==5)
+{
+    printf("\nchances over,correct answer is %d",m);
+}
+    
+}}
+
